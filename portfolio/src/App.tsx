@@ -8,6 +8,7 @@ import Header from './components/Header.tsx'
 import PersonalProjects from './pages/PersonalProjects.tsx'
 import Interests from './pages/Interests.tsx'
 import EducationProjects from './pages/EducationProjects.tsx'
+import Footer from './components/Footer.tsx'
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
       <Route path="/Interests" element={<Interests />} />
       <Route path="/EducationProjects" element={<EducationProjects />} />
     </Routes>
+    <Footer />
     </div>
   )
 }
