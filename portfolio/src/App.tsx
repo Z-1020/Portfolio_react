@@ -1,13 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home.tsx'
 import Header from './components/Header.tsx'
-import PersonalProjects from './pages/PersonalProjects.tsx'
+import Skills from './pages/Skills.tsx'
 import Interests from './pages/Interests.tsx'
-import EducationProjects from './pages/EducationProjects.tsx'
+import Projects from './pages/Projects.tsx'
 import Footer from './components/Footer.tsx'
 
 
@@ -17,9 +15,9 @@ export default function App() {
       <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/PersonalProjects" element={<PersonalProjects />} />
+      <Route path="/Skills" element={<Skills />} />
       <Route path="/Interests" element={<Interests />} />
-      <Route path="/EducationProjects" element={<EducationProjects />} />
+      <Route path="/Projects" element={<Projects />} />
     </Routes>
     <Footer />
     </div>
