@@ -13,46 +13,37 @@ export default function Header() {
         <div className="flex items-center ">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="ml-auto md:hidden text-white text-2xl focus:outline-none"
+          className="ml-auto md:hidden text-white text-2xl focus:outline-none md:hover:text-gray-300"
           aria-label="Menu"
         >
-          ☰
+           {isOpen ? "X": "☰"}
         </button>
-        <ul
-          className={`
-            ${isOpen ? "block" : "hidden"}
-            md:flex
-            absolute md:static top-16 left-0 w-full md:w-auto
-            bg-sky-600 md:bg-transparent
-            p-4 md:p-0
-            space-y-4 md:space-y-0 md:space-x-6
-          `}
-        >
+        <ul className={`${isOpen ? "block" : "hidden"} md:flex absolute text-center hover:text-gray-300 md:static top-16 left-0 w-full md:w-auto bg-sky-600 md:bg-transparent p-4 md:p-0 space-y-4 md:space-y-0 md:space-x-6`}>
           <li>
             <Link to="/" onClick={() => setIsOpen(false)}
-              className="text-white hover:text-gray-300">
+              className="text-white hover:text-gray-300 md:focus:text-gray-300">
               Accueil
             </Link>
           </li>
 
           <li>
-            <Link to="/about" onClick={() => setIsOpen(false)}
-              className="text-white hover:text-gray-300">
-              À propos
+            <Link to="/Skills" onClick={() => setIsOpen(false)}
+              className="text-white hover:text-gray-300 md:focus:text-gray-400">
+              Compétences
             </Link>
           </li>
 
           <li>
             <Link to="/projects" onClick={() => setIsOpen(false)}
-              className="text-white hover:text-gray-300">
+              className="text-white hover:text-gray-300 md:focus:text-gray-400">
               Projets
             </Link>
           </li>
 
           <li>
-            <Link to="/contact" onClick={() => setIsOpen(false)}
-              className="text-white hover:text-gray-300">
-              Contact
+            <Link to="/Interests" onClick={() => setIsOpen(false)}
+              className="text-white hover:text-gray-300 md:focus:text-gray-400">
+              Centre d'intérêts
             </Link>
           </li>
         </ul>
