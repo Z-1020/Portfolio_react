@@ -1,8 +1,8 @@
 
 export default function Home() {
   return (
-    <main className=" min-w-screen min-h-screen h-full  flex justify-center bg-blue-950 font-roboto">
-      <div className=" h-full bg-blue-900 rounded-xl mt-20 mb-20 ml-8 mr-8">
+    <main className="h-full flex justify-center bg-blue-950 font-roboto">
+      <div className="h-full w-3/4  bg-blue-900 rounded-xl mt-20 mb-20 ml-8 mr-8">
       <h1 className="text-3xl font-bold text-stone-50 text-center m-8">
         Zoé Margerie
       </h1>
@@ -14,7 +14,6 @@ export default function Home() {
         à partir du 7 avril 2026.
       </p>
       </div>
-      
       </div>
     </main>
   )
