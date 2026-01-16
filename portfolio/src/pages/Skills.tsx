@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Skills() {
   const skills = [
     {
       title : "Langages",
@@ -20,7 +20,7 @@ export default function Home() {
 
   ]
   return (
-    <main className="h-full flex justify-center bg-blue-950 font-roboto">
+    <main className=" min-h-screen h-full flex justify-center bg-blue-950 font-roboto">
       <div className=" h-full w-3/4 bg-blue-900 rounded-xl mt-20 mb-20 ml-8 mr-8">
       <h1 className="text-3xl font-bold text-stone-50 text-center m-8">
         Compétences
