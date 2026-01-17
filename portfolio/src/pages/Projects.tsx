@@ -22,7 +22,22 @@ export default function Projects() {
     nbPersonnes : "Projet réalisé seul",
     langages : "Java, JavaFX",
     contributions :["Gestion du tracé", "Changement de la taille du tracé", "Changement de couleur du tracé", "Affichage du tracé", "Sauvegarde du dessin"],
-    description : "Gribouille est un logiciel de dessin réalisé en JavaFX et en Java, il est possible, de réaliser des dessins, de changer la couleur ou d'épaissir le tracé, et de sauvegader le dessin",
+    description : "Gribouille est un logiciel de dessin réalisé en JavaFX et en Java, il est possible, de réaliser des dessins, de changer la couleur ou d'épaissir le tracé, et de sauvegarder le dessin",
+  },
+  {
+    title : "Anime Requester",
+    image : "src/assets/animeRequester.png",
+    nbPersonnes : "Projet de groupe (3 personnes)",
+    langages : "HTML, CSS, JavaScript",
+    contributions : ["Mode sombre/ mode claire", "style en CSS"],
+    description : "L'anime requester est un site web qui grâce à une API permet de rechercher et d'afficher des résumés d'animés japonais. Il est possible de rechercher par genre, par nom, par classement ou par leur identifiant",
+  },
+  {
+    title : "Solo Pong",
+    image : "src/assets/soloPong.png",
+    nbPersonnes : "Projet de groupe (2 personnes)",
+    contributions : ["Affichage du jeu", "Gestion des mouvements de la barre"],
+    description : "Solo Pong est un jeu inspiré de Pong mythique jeu développé fin des années 70. Le principe de Solo Pong est de faire rebondir la balle sur la raquette et sur les mur, si la balle touche le sol, vous avez perdu."
   }
   ]
   return (
