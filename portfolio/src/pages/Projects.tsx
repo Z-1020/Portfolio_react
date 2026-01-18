@@ -3,10 +3,10 @@ export default function Projects() {
   {
     title : "Application de recherche de stage",
     image : "src/assets/applicationStage.png",
-    nbPersonnes : ["Projet de groupe (5 personnes)"],
+    nbPersonnes : "Projet de groupe (5 personnes)",
     langages : "React, Laravel, Tailwind CSS",
-    contributions : ["Utilisation de l'API pour afficher les informations d'une entreprise", "Requête pour afficher le nombre d'étudiants ayant fait leur stage dans l'entreprise"],
-    description : "Cette application a été conçue pour répondre à la demande d'une cliente (fictive), souhaitant une application pour faciliter la recherche de stage de ses étudiants.",
+    contributions : ["Utilisation de l'API pour afficher les informations d'une entreprise", "Requête pour afficher le nombre d'étudiants ayant effectué leur stage dans l'entreprise"],
+    description : "Cette application a été conçue pour répondre à la demande d'une cliente (fictive), souhaitant une application afin de faciliter la recherche de stage de ses étudiants.",
     lien: "https://github.com/Briiice3R/StageWebApp.git",
   },
   {
@@ -15,7 +15,7 @@ export default function Projects() {
     nbPersonnes : "Projet de groupe (4 personnes)" ,
     langages : "PHP, HTML, CSS, JavaScript, Tailwind CSS",
     contributions : ["Affichage du profil", "Suppression du compte par l'utilisateur", "Modification des éléments du compte par l'utilisateur", "Gestion des combats en JavaScript"],
-    description : "DungeonXplorer est un jeu développé en PHP, il est inspiré inspiré d'un « livre dont vous êtes le héros ». Le joueur peut gérer son compte, s'inscrire, se connecter, commencer une aventure.",
+    description : "DungeonXplorer est un jeu développé en PHP, il est inspiré d'un « livre dont vous êtes le héros ». Le joueur peut gérer son compte, s'inscrire, se connecter et commencer une aventure.",
     lien: "https://github.com/Briiice3R/DungeonXplorer.git",
   },
   {
@@ -42,8 +42,8 @@ export default function Projects() {
     image : "src/assets/soloPong.png",
     nbPersonnes : "Projet de groupe (2 personnes)",
     langages : "HTML, CSS, JavaScript",
-    contributions : ["Affichage du jeu", "Gestion des mouvements de la barre."],
-    description : "Solo Pong est un jeu inspiré de Pong, mythique jeu commercialisé en 1972. Le principe de Solo Pong est de faire rebondir la balle sur la raquette et sur les murs. Si la balle touche le sol, vous perdez.",
+    contributions : ["Affichage du jeu", "Gestion des mouvements de la raquette"],
+    description : "Solo Pong est un jeu inspiré de Pong, mythique jeu commercialisé en 1972. Le principe du jeu est de faire rebondir la balle sur la raquette et sur les murs. Si la balle touche le sol, vous perdez.",
     lien: "https://github.com/DarkNatha008/pong.git",
     lienVisualisation: "https://darknatha008.github.io/pong/",
   }
