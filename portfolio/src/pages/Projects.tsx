@@ -21,7 +21,7 @@ export default function Projects() {
   {
     title : "Gribouille",
     image : "src/assets/gribouille.jpg",
-    nbPersonnes : "Projet réalisé seul",
+    nbPersonnes : "Projet individuel",
     langages : "Java, JavaFX",
     contributions :["Gestion du tracé", "Changement de la taille du tracé", "Changement de couleur du tracé", "Affichage du tracé", "Sauvegarde du dessin"],
     description : "Gribouille est un logiciel de dessin réalisé en Java et en JavaFX. Il est possible de réaliser des dessins, de changer la couleur ou d'épaissir le tracé, ainsi que de sauvegarder le dessin.",
