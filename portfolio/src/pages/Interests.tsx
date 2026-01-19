@@ -1,9 +1,36 @@
-export default function Home() {
+export default function Interests() {
+  const interests = [
+    {
+      title: "Collection de roche, minéraux et fossiles",
+      image: "",
+      description:"",
+    },
+    {
+      title: "Photographie",
+      image : "",
+      description: "",
+    },
+    {
+      title: "dessin",
+      image : "",
+      description: "",
+    }
+  ]
   return (
-    <div className=" min-w-screen min-h-screen h-full flex items-center justify-center ">
-      <h1 className="text-4xl font-bold text-stone-50">
-        Voici mes centre d'intêrets
+    <main className="min-h-screen h-full flex justify-center bg-blue-950 font-roboto">
+      <div className="h-full w-3/4 bg-blue-900 rounded-xl mt-20 mb-20 ml-8 mr-8 ">
+      <div className="text-stone-50">
+      <h1 className="text-5xl font-bold text-center m-8">
+       Mes centre d'intérêts
       </h1>
+       {interests.map((section) => (
+        <article key={section.title} className="mb-10">
+          <h2 className="text-3xl md:ml-4 md:mr-4 md:mb-4 font-bold text-center md:text-start"> {section.title}</h2>
+          <img></img>
+           </article>
+      ))}
     </div>
+    </div>
+    </main>
   )
 }
