@@ -2,17 +2,20 @@ export default function Interests() {
   const interests = [
     {
       title: "Collection de roche, minéraux et fossiles",
-      image: "",
+      image: "src/assets/collection_mineraux.svg",
+      alt: "Photographie de ma collection de roches",
       description:"",
     },
     {
       title: "Photographie",
       image : "",
+      alt: "Photographie d'un minéral",
       description: "",
     },
     {
       title: "dessin",
       image : "",
+      alt: "Photographie d'un dessin",
       description: "",
     }
   ]
@@ -26,7 +29,8 @@ export default function Interests() {
        {interests.map((section) => (
         <article key={section.title} className="mb-10">
           <h2 className="text-3xl md:ml-4 md:mr-4 md:mb-4 font-bold text-center md:text-start"> {section.title}</h2>
-          <img></img>
+          <img src={section.image} className="w-full h-auto p-4" alt={section.alt}></img>
+          <p>{section.description}</p>
            </article>
       ))}
     </div>
