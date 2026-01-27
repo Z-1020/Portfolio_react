@@ -2,15 +2,21 @@ export default function Interests() {
   const interests = [
     {
       title: "Collection de roche, minéraux et fossiles",
-      image: "src/assets/collection_mineraux.svg",
+      image1: "src/assets/collection1.jpg",
+      image2: "src/assets/collection2.jpg",
+      image3: "src/assets/collection3.jpg",
+      image4: "src/assets/collection4.jpg",
       alt: "Photographie de ma collection de roches",
-      description:"",
+      description:"L'un de mes loisirs préférés est de collectionner des roches, des fossiles et des minéraux. J'ai une centaine de spécimen de près de 20 espèces différentes. C'est une passion que j'ai depuis l'âge de 10 ans",
     },
     {
       title: "Photographie",
-      image : "",
+      image1: "src/assets/amethyste1.jpg",
+      image2: "src/assets/citrine2.jpg",
+      image3: "src/assets/amethyste2.jpg",
+      image4: "src/assets/aragonite.jpg",
       alt: "Photographie d'un minéral",
-      description: "",
+      description: "Je pratique la photographie depuis l'âge de 13 ans",
     },
     {
       title: "dessin",
@@ -20,20 +26,33 @@ export default function Interests() {
     }
   ]
   return (
-    <main className="min-h-screen h-full flex justify-center bg-blue-950 font-roboto">
-      <div className="h-full w-3/4 bg-blue-900 rounded-xl mt-20 mb-20 ml-8 mr-8 ">
-      <div className="text-stone-50">
-      <h1 className="text-5xl font-bold text-center m-8">
-       Mes centre d'intérêts
-      </h1>
+    <main className="min-h-screen bg-stone-50 font-roboto">
+      
+        <h1 className="text-5xl font-bold text-center text-stone-400 m-8">
+          Mes centre d'intérêts
+        </h1>
+      <div className="text-stone-50 w-3/4 gap-10 flex flex-col items-center">
+      
        {interests.map((section) => (
         <article key={section.title} className="mb-10">
-          <h2 className="text-3xl md:ml-4 md:mr-4 md:mb-4 font-bold text-center md:text-start"> {section.title}</h2>
-          <img src={section.image} className="w-full h-auto p-4" alt={section.alt}></img>
-          <p>{section.description}</p>
+          <div className="bg-stone-400  p-4 rounded-xl">
+          <h2 className="text-3xl font-bold text-center"> {section.title}</h2>
+            <table className="m-2">
+              <tr className="">
+                <th><img src={section.image1} className="p-2 rounded-xl" alt={section.alt}></img></th>
+                <th><img src={section.image2} className="p-2 rounded-xl " alt={section.alt}></img></th>
+              </tr>
+              <tr className="">
+                <th><img src={section.image3} className="p-2 rounded-xl" alt={section.alt}></img></th>
+                <th><img src={section.image4} className="p-2 rounded-xl" alt={section.alt}></img></th>
+              </tr>
+            </table>
+          
+          <p className="text-center">{section.description}</p>
+          </div>
            </article>
+           
       ))}
-    </div>
     </div>
     </main>
   )

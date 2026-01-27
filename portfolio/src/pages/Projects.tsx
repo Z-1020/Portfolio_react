@@ -61,7 +61,7 @@ export default function Projects() {
             <h2 className="text-3xl md:ml-4 md:mr-4 md:mb-4 font-bold text-center md:text-start">{section.title}</h2>
             <p className="text-center md:text-start space-y-1 ml-4 mr-4 mb-4">{section.nbPersonnes}</p>
             <div className="md:flex">
-            <img src={section.image} className="w-full h-auto p-4" alt="Capture d'écran"></img>
+            <img src={section.image} className="w-full h-auto m-4  rounded-xl" alt="Capture d'écran "></img>
                 <div className="md:flex md:flex-col">
             <h3 className="font-bold text-xl m-2">Langages</h3>
             <p className="space-y-1 m-2 ">
