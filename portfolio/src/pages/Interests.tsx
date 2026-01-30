@@ -3,41 +3,32 @@ export default function Interests() {
   const isMobile = window.innerWidth < 768;
   const interests = [
     {
-      title: "Collection de roche, minéraux et fossiles",
+      title: "Géologie / Minéralogie (loisir)",
       initial:"{{ opacity: 0, y: 30 }}",
       animate:"{{ opacity: 1, y: 0 }}",
       transition: 1,
-      color: "bg-stone-400 p-4 rounded-xl shadow-lg shadow-stone-500",
+      color: "bg-stone-500 p-4 rounded-xl shadow-lg shadow-stone-600",
       image1: "src/assets/collection1.jpg",
       image2: "src/assets/collection2.jpg",
       image3: "src/assets/collection3.jpg",
       image4: "src/assets/collection4.jpg",
       alt: "Photographie de ma collection de roches",
-      description:"L'un de mes loisirs préférés est de collectionner des roches, des fossiles et des minéraux. J'ai une centaine de spécimen de près de 20 espèces différentes. C'est une passion que j'ai depuis l'âge de 10 ans",
+      description:"L'un de mes loisirs préférés est de collectionner, identifier et de classer des roches, des fossiles et des minéraux. J'ai une centaine de spécimen de près de 20 espèces différentes. C'est une passion que j'ai depuis l'âge de 10 ans.",
     },
     {
       title: "Photographie",
       initial:"{{ opacity: 0, y: 30 }}",
       animate:"{{ opacity: 1, y: 0 }}",
       transition: 1.1 ,
-      color: "bg-stone-500 p-4 rounded-xl shadow-lg shadow-stone-600",
+      color: "bg-stone-600 p-4 rounded-xl shadow-lg shadow-stone-700",
       image1: "src/assets/amethyste1.jpg",
       image2: "src/assets/citrine2.jpg",
       image3: "src/assets/amethyste2.jpg",
       image4: "src/assets/aragonite.jpg",
       alt: "Photographie d'un minéral",
-      description: "Je pratique la photographie depuis l'âge de 13 ans",
+      description: "Je pratique la photographie depuis l’âge de 14 ans. J’aime particulièrement photographier mes pierres : en jouant sur l’angle de prise de vue et l’exposition à la lumière, chaque image devient unique.",
     },
-    {
-      title: "dessin",
-      initial:"{{ opacity: 0, y: 30 }}",
-      animate:"{{ opacity: 1, y: 0 }}",
-      transition: 1.2 ,
-      color: "bg-stone-600 p-4 rounded-xl shadow-lg shadow-stone-700",
-      image : "",
-      alt: "Photographie d'un dessin",
-      description: "",
-    }
+    
   ]
   const container = {
   hidden: { opacity: 0 },
@@ -75,7 +66,7 @@ export default function Interests() {
               </tr>
             </table>
           
-          <p className=" p-4 text-justify md:text-3xl text-l">{section.description}</p>
+          <p className="p-4 text-justify md:text-3xl text-l">{section.description}</p>
           </div>
           </motion.article>
            </article>

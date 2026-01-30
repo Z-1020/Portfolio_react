@@ -7,18 +7,21 @@ import Skills from './pages/Skills.tsx'
 import Interests from './pages/Interests.tsx'
 import Projects from './pages/Projects.tsx'
 import Footer from './components/Footer.tsx'
+import ScrollToTop from "./components/ScrollToTop";
 
 
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Skills" element={<Skills />} />
       <Route path="/Interests" element={<Interests />} />
       <Route path="/Projects" element={<Projects />} />
     </Routes>
+    
     <Footer />
     </div>
   )

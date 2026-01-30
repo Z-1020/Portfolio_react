@@ -4,7 +4,7 @@ export default function Projects() {
   const projects = [
   {
     title : "Application de recherche de stage",
-    color: "bg-stone-400 p-4 rounded-xl shadow-lg shadow-stone-500",
+    color: "bg-stone-500 p-4 rounded-xl shadow-lg shadow-stone-600",
     image : "src/assets/applicationStage.png",
     nbPersonnes : "Projet de groupe (5 personnes)",
     langages : "React, Laravel, Tailwind CSS",
@@ -14,7 +14,7 @@ export default function Projects() {
   },
   {
     title : "DungeonXplorer",
-    color: "bg-stone-500 p-4 rounded-xl shadow-lg shadow-stone-600",
+    color: "bg-stone-600 p-4 rounded-xl shadow-lg shadow-stone-700",
     image : "src/assets/dungeonXplorer.png",
     nbPersonnes : "Projet de groupe (4 personnes)" ,
     langages : "PHP, HTML, CSS, JavaScript, Tailwind CSS",
@@ -24,7 +24,7 @@ export default function Projects() {
   },
   {
     title : "Gribouille",
-    color: "bg-stone-600 p-4 rounded-xl shadow-lg shadow-stone-700",
+    color: "bg-stone-700 p-4 rounded-xl shadow-lg shadow-stone-800",
     image : "src/assets/gribouille.jpg",
     nbPersonnes : "Projet individuel",
     langages : "Java, JavaFX",
@@ -34,7 +34,7 @@ export default function Projects() {
   },
   {
     title : "Anime Requester",
-    color: "bg-stone-700 p-4 rounded-xl shadow-lg shadow-stone-800",
+    color: "bg-stone-800 p-4 rounded-xl shadow-lg shadow-stone-900",
     image : "src/assets/animeRequester.png",
     nbPersonnes : "Projet de groupe (3 personnes)",
     langages : "HTML, CSS, JavaScript",
@@ -45,7 +45,7 @@ export default function Projects() {
   },
   {
     title : "Solo Pong",
-    color: "bg-stone-800 p-4 rounded-xl shadow-lg shadow-stone-900",
+    color: "bg-stone-900 p-4 rounded-xl shadow-lg shadow-stone-950",
     image : "src/assets/soloPong.png",
     nbPersonnes : "Projet de groupe (2 personnes)",
     langages : "HTML, CSS, JavaScript",
@@ -96,7 +96,7 @@ export default function Projects() {
                   <h3 className="font-bold text-xl text-2xl md:text-4xl font-bold mt-4">Mes Contributions</h3>
                   <ul className="space-y-1 mt-4">
               {section.contributions.map((realisation) =>(
-                <li className="list-disc ml-8 md:p-4 text-justify md:text-3xl text-l " key={realisation}>{realisation}</li>
+                <li className="list-disc ml-8 md:p-4 md:text-3xl text-l " key={realisation}>{realisation}</li>
               ))}
             
             </ul>
@@ -110,9 +110,6 @@ export default function Projects() {
            
             </>
             )}
-            
-            
-            
             </div>
             </div>
             </motion.article>
