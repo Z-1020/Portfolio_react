@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 export default function Home() {
    const projects = [
@@ -46,7 +45,7 @@ const navigate = useNavigate();
           <h3 className="font-bold text-xl text-2xl md:text-4xl font-bold p-2 md:p-4 text-center text-stone-50">Stage développement web ou développement logiciel de 8 semaines.</h3>
             <div className="flex flex-col md:justify-center text-stone-50 m-4 md:m-8">
               <p className="md:p-4 text-justify md:text-3xl text-l m-4">Étudiante en deuxième année de BUT Informatique, je suis intéressée par le développement web et le développement logiciel.
-                Curieuse et créative, j'aime apprendre de nouvelle technologie et les utiliser pour les projets.
+                Curieuse et créative, j'aime apprendre de nouvelles technologies et les utiliser pour les projets.
                 Je recherche un stage de développement web ou de développement logiciel de 8 à 10 semaines à partir du 7 avril 2026.
               </p>
             <div className="flex gap-10 flex-col md:justify-center md:flex-row m-4">
@@ -72,7 +71,7 @@ const navigate = useNavigate();
                 <ul className="md: md:text-3xl text-center text-l md:ml-4 ">
                   <li>Front-end: HTML / CSS / Javascript</li>
                   <li>Back-end: PHP / Java </li>
-                  <li>Framework: Laravel / Tailwind CSS / React</li>
+                  <li>Frameworks: Laravel / Tailwind CSS / React</li>
                 </ul>
               </div>
             </div>

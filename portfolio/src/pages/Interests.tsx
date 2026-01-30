@@ -13,7 +13,7 @@ export default function Interests() {
       image3: "src/assets/collection3.jpg",
       image4: "src/assets/collection4.jpg",
       alt: "Photographie de ma collection de roches",
-      description:"L'un de mes loisirs préférés est de collectionner, identifier et de classer des roches, des fossiles et des minéraux. J'ai une centaine de spécimen de près de 20 espèces différentes. C'est une passion que j'ai depuis l'âge de 10 ans.",
+      description:"L’un de mes loisirs est la collection, l’identification et le classement de roches, fossiles et minéraux. Je possède aujourd’hui près d’une centaine de spécimens représentant une quarantaine d’espèces différentes. Cette passion m’accompagne depuis l’âge de 10 ans.",
     },
     {
       title: "Photographie",
