@@ -12,9 +12,6 @@ import ScrollToTop from "./components/ScrollToTop";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="bg-green-500 text-white text-4xl p-10">
-  Tailwind Works v4 🚀
-</div>
       <Header />
       <ScrollToTop />
     <Routes>
