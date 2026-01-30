@@ -41,40 +41,34 @@ export default function Interests() {
 };
   return (
     <main className=" bg-stone-50 font-roboto">
-      
       <motion.article  initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
         <h1 className="text-6xl font-bold text-center text-stone-600 mt-30 mb-30">
           Mes centre d'intérêts
         </h1>
-        </motion.article>
-        <hr className="ml-10 mr-10 mt-30 mb-30 border-stone-500 border-3"></hr>
+      </motion.article>
+      <hr className="ml-10 mr-10 mt-30 mb-30 border-stone-500 border-3"></hr>
       <div className="text-stone-50 w-3/4 mx-auto">
-      
-       {interests.map((section) => (
-        <article key={section.title} className="mb-30">
-         <motion.article  variants={container} initial="hidden" animate={isMobile ? "visible" : undefined} whileInView={!isMobile ? "visible" : undefined} viewport={{ once: true, amount: 0.2 }}>
-          <div className={section.color}>
-          <h2 className="text-2xl md:text-4xl font-bold text-center p-4 md:p-10"> {section.title}</h2>
-            <table className="m-2">
-              <tr className="">
-                <th><img src={section.image1} className="p-2 rounded-xl" alt={section.alt}></img></th>
-                <th><img src={section.image2} className="p-2 rounded-xl " alt={section.alt}></img></th>
-              </tr>
-              <tr className="">
-                <th><img src={section.image3} className="p-2 rounded-xl" alt={section.alt}></img></th>
-                <th><img src={section.image4} className="p-2 rounded-xl" alt={section.alt}></img></th>
-              </tr>
-            </table>
-          
-          <p className="p-4 text-justify md:text-3xl text-l">{section.description}</p>
-          </div>
-          </motion.article>
-           </article>
-           
-      ))}
-      
-    </div>
-  
+        {interests.map((section) => (
+          <article key={section.title} className="mb-30">
+            <motion.article  variants={container} initial="hidden" animate={isMobile ? "visible" : undefined} whileInView={!isMobile ? "visible" : undefined} viewport={{ once: true, amount: 0.2 }}>
+              <div className={section.color}>
+                <h2 className="text-2xl md:text-4xl font-bold text-center p-4 md:p-10"> {section.title}</h2>
+                <table className="m-2">
+                  <tr className="">
+                    <th><img src={section.image1} className="p-2 rounded-xl" alt={section.alt}></img></th>
+                    <th><img src={section.image2} className="p-2 rounded-xl " alt={section.alt}></img></th>
+                  </tr>
+                  <tr className="">
+                    <th><img src={section.image3} className="p-2 rounded-xl" alt={section.alt}></img></th>
+                    <th><img src={section.image4} className="p-2 rounded-xl" alt={section.alt}></img></th>
+                  </tr>
+                </table>
+                <p className="p-4 text-justify md:text-3xl text-l">{section.description}</p>
+              </div>
+            </motion.article>
+          </article>  
+        ))}
+      </div>
     </main>
   )
 }
