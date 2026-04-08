@@ -30,15 +30,21 @@ export default function Home() {
 
 const navigate = useNavigate();
   return (
-    <main className="min-h-screen bg-stone-50 font-roboto text-stone-50">
+    <main className="min-h-screen font-roboto text-stone-50 ">
       <motion.article  initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-stone-600 mt-30 mb-30 ">
+        <div className="bg-stone-800/95 mt-30 ml-5 w-30/100">
+        <h1 className="md:text-xl font-bold text-center  ">
           Zoé Margerie
         </h1>
+        <motion.article  initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+        <h2 className=" md:text-xl font-bold text-center">Étudiante en deuxième année de BUT Informatique</h2>
       </motion.article>
-      <motion.article  initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-stone-700 mt-30 mb-30 ">Étudiante en deuxième année de BUT Informatique</h2>
+        </div>
+        <div className="bg-stone-800/95 mt-30 ml-5 w-30/100">
+          <p>Développeuse web créative et ambitieuse</p>
+        </div>
       </motion.article>
+      
       <hr className="ml-10 mr-10 mt-30 mb-30 border-stone-500 border-3"></hr>
       <motion.article  variants={container} initial="hidden" animate={isMobile ? "visible" : undefined} whileInView={!isMobile ? "visible" : undefined} viewport={{ once: true, amount: 0.2 }}>
         <div className="bg-stone-500 rounded-xl shadow-lg w-3/4 md:p-10 mx-auto shadow-stone-600 mb-30 text-stone-50">

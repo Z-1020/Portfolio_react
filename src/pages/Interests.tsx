@@ -40,7 +40,7 @@ export default function Interests() {
   },
 };
   return (
-    <main className=" bg-stone-50 font-roboto">
+    <main className="font-roboto">
       <motion.article  initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
         <h1 className="text-6xl font-bold text-center text-stone-600 mt-30 mb-30">
           Mes centre d'intérêts

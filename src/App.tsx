@@ -11,7 +11,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[url('src/assets/pyrite.png')] h-screen w-screen bg-cover bg-center">
       <Header />
       <ScrollToTop />
     <Routes>

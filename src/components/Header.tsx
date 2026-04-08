@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-stone-500 text-white p-4 font-roboto">
+    <header className="bg-stone-800/95 text-white p-4 font-roboto">
       <div className="flex w-full items-center">
         <h1 className='text-stone-50 text-3xl mr-4'>Portfolio</h1>
         <nav className="ml-auto">

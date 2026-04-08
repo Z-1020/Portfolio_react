@@ -65,7 +65,7 @@ export default function Projects() {
   },
 };
   return (
-    <main className="flex justify-center bg-stone-50 font-roboto">
+    <main className="flex justify-center font-roboto">
       <div className="text-stone-50 w-3/4">
         <motion.article  initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
           <h1 className="text-6xl font-bold text-center text-stone-600 mt-30 mb-30 ">
