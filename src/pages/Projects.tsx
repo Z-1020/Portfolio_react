@@ -5,7 +5,7 @@ export default function Projects() {
   {
     title : "Application de recherche de stage",
     color: "bg-stone-500 p-4 rounded-xl shadow-lg shadow-stone-600",
-    image : "src/assets/applicationStage.png",
+    image : "/src/assets/applicationStage.png",
     nbPersons : "Projet de groupe (5 personnes)",
     languages : "React, Laravel, Tailwind CSS",
     contributions : ["Utilisation de l'API pour afficher les informations d'une entreprise", "Requête pour afficher le nombre d'étudiants ayant effectué leur stage dans l'entreprise"],
@@ -15,7 +15,7 @@ export default function Projects() {
   {
     title : "DungeonXplorer",
     color: "bg-stone-600 p-4 rounded-xl shadow-lg shadow-stone-700",
-    image : "src/assets/dungeonXplorer.png",
+    image : "/src/assets/dungeonXplorer.png",
     nbPersons : "Projet de groupe (4 personnes)" ,
     languages : "PHP, HTML, CSS, JavaScript, Tailwind CSS",
     contributions : ["Affichage du profil", "Suppression du compte par l'utilisateur", "Modification des éléments du compte par l'utilisateur", "Gestion des combats en JavaScript"],
@@ -25,7 +25,7 @@ export default function Projects() {
   {
     title : "Gribouille",
     color: "bg-stone-700 p-4 rounded-xl shadow-lg shadow-stone-800",
-    image : "src/assets/gribouille.jpg",
+    image : "/src/assets/gribouille.jpg",
     nbPersons : "Projet individuel",
     languages : "Java, JavaFX",
     contributions :["Gestion du tracé", "Changement de la taille du tracé", "Changement de couleur du tracé", "Affichage du tracé", "Sauvegarde du dessin"],
