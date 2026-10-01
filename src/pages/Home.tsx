@@ -5,13 +5,13 @@ export default function Home() {
   {
     title : "Application de recherche de stage",
     color: "bg-stone-600 p-4 w-3/4 mx-auto rounded-xl shadow-lg shadow-stone-700",
-    image : "src/assets/applicationStage.png",
+    image : "/src/assets/applicationStage.png",
     description : "Cette application a été conçue pour répondre à la demande d'une cliente (fictive), souhaitant une application afin de faciliter la recherche de stage de ses étudiants.",
   },
   {
     title : "DungeonXplorer",
     color: "bg-stone-700 p-4 w-3/4 rounded-xl mx-auto shadow-lg shadow-stone-800",
-    image : "src/assets/dungeonXplorer.png",
+    image : "/src/assets/dungeonXplorer.png",
     description : "DungeonXplorer est un jeu développé en PHP, il est inspiré d'un « livre dont vous êtes le héros ». Le joueur peut gérer son compte, s'inscrire, se connecter et commencer une aventure.",
     
   },
